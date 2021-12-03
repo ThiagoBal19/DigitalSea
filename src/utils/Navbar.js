@@ -1,4 +1,5 @@
 import brandWallpaper from '../components/assets/brandWallpaper.png';
+import CartWidget from './CartWidget';
 
 const Navbar = () => {
     return(
@@ -12,6 +13,9 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a href="x">CARRITO</a>
+                        </li>
+                        <li>
+                            <CartWidget/>
                         </li>
                     </ul>
                 </div>

@@ -25,9 +25,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   overflow: hidden;
   background-color: #f6f6f6;
   padding: 0rem 1rem;
@@ -44,9 +41,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   overflow: hidden;
   background-color: lightgrey;
 }
@@ -59,6 +53,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .listas li {
@@ -74,5 +71,9 @@
 
 .listas li a:hover {
   color: black;
+}
+
+.cart {
+  width: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */

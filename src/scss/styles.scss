@@ -13,7 +13,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
         overflow: hidden;        
         background-color: #f6f6f6;
         padding: 0rem 1rem;
@@ -23,7 +22,6 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
         overflow: hidden;
         background-color: lightgrey;
     }
@@ -32,6 +30,7 @@
 .listas {
     display: flex;
     flex-direction: row;
+    align-items: center;
 
     li {
         list-style: none;
@@ -46,4 +45,8 @@
             color: black;
         }
     }
+}
+
+.cart {
+    width: 2rem;
 }
