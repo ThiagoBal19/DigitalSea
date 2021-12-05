@@ -76,4 +76,71 @@
 .cart {
   width: 2rem;
 }
+
+#gridActivos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin: 1rem 0rem;
+}
+
+#gridActivos #activos {
+  margin: 2rem;
+  border: 0.1px gray solid;
+  border-radius: 1rem;
+}
+
+#gridActivos #activos .imageDiv {
+  text-align: center;
+}
+
+#gridActivos #activos .imageDiv .image {
+  width: 100%;
+  height: 24rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom: 1px gray dotted;
+}
+
+#gridActivos #activos #description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px gray dotted;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0rem 1rem;
+}
+
+#gridActivos #activos #description .description-title {
+  font-family: ui-monospace;
+}
+
+#gridActivos #activos #description .description-cost {
+  font-family: monospace;
+}
+
+#gridActivos #activos .buttonComprar {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0rem 1rem;
+}
 /*# sourceMappingURL=styles.css.map */

@@ -1,14 +1,19 @@
+import ItemCount from './ItemCount';
+
 const Item = ({title, stock, cost, image}) => {
     return(
         <>
-            <section>
-                <div>
-                    <img src={image} alt={title}/>
+            <section id="activos">
+                <div className="imageDiv">
+                    <img className="image" src={image} alt={title}/>
                 </div>
-                <div>
-                    <h1>{title}</h1>
-                    <h2>{cost}</h2>
-                    <p>{stock}</p>
+                <div id="description">
+                    <h1 className="description-title">{title}</h1>
+                    <h2 className="description-cost">{cost}</h2>
+                </div>
+                <div className="buttonComprar">
+                    <button>Comprar</button>
+                    <p className="description-stock">{stock}</p>
                 </div>
             </section>
         </>
