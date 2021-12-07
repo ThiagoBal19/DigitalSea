@@ -1,6 +1,6 @@
-import ItemCount from './ItemCount';
+import { Link } from "react-router-dom";
 
-const Item = ({title, stock, cost, image}) => {
+const Item = ({id, title, stock, cost, image}) => {
     return(
         <>
             <section id="activos">
@@ -11,9 +11,9 @@ const Item = ({title, stock, cost, image}) => {
                     <h1 className="description-title">{title}</h1>
                     <h2 className="description-cost">{cost}</h2>
                 </div>
-                <div className="buttonComprar">
-                    <button>Comprar</button>
-                    <p className="description-stock">{stock}</p>
+                <div className="buttonDiv">
+                    <Link className="buttonComprar" to={`/activo/${id}`}>Invertir</Link>
+                    <p className="description-stock">mint: {stock}</p>
                 </div>
             </section>
         </>

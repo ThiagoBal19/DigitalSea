@@ -1,13 +1,11 @@
 import './App.css';
 import './scss/styles.css';
-import Navbar from './utils/Navbar';
-import ItemListContainer from './utils/ItemListCointainer';
+import Home from './utils/Home';
 
 function App() {
   return (
     <header>
-      <Navbar/>
-      <ItemListContainer/>
+      <Home/>
       <br/>
       <p className="App"><strong>*Página en desarrollo...</strong></p>
     </header>

@@ -60,13 +60,14 @@
         margin: 2rem;
         border: 0.1px gray solid;
         border-radius: 1rem;
+        box-shadow: 0 0 5px black;
 
         .imageDiv {
             text-align: center;
 
             .image {
                 width: 100%;
-                height: 24rem;
+                height: 22rem;
                 border-top-right-radius: 1rem;
                 border-top-left-radius: 1rem;
                 border-bottom: 1px gray dotted;
@@ -89,12 +90,23 @@
             }
         }
 
-        .buttonComprar {
+        .buttonDiv {
             text-align: center;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding: 0rem 1rem;
+            padding: 0.5rem 1rem;
+            background-color: rgba(211, 211, 211, 0.397);
+            border-bottom-right-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+
+            .buttonComprar {
+                padding: 0.2rem;
+                border: 1px gray solid;
+                border-radius: 1rem;
+                background-color: lightgrey;
+                font-family: monospace;
+            }
         }
     }
 }
