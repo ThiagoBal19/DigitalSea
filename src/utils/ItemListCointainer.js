@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import ItemList from "./ItemList";
 import CustomFetch from "./CustomFetch";
-const {Activos} = require('./Activos');
+import Activos from './Activos';
 
 const ItemListContainer = () => {
 

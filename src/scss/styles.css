@@ -155,5 +155,12 @@
   border-radius: 1rem;
   background-color: lightgrey;
   font-family: monospace;
+  text-decoration: none;
+  color: black;
+}
+
+#gridActivos #activos .buttonDiv .buttonComprar:hover {
+  background-color: black;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */

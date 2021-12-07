@@ -106,6 +106,13 @@
                 border-radius: 1rem;
                 background-color: lightgrey;
                 font-family: monospace;
+                text-decoration: none;
+                color: black;
+
+            }
+            .buttonComprar:hover {
+                background-color: black;
+                color: white;
             }
         }
     }
