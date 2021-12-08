@@ -9,8 +9,8 @@ const Home = () => {
             <Navbar/>
             <Routes>
                 <Route path="/" element={<ItemListContainer/>} />
-                <Route path="/category/:nameCategory" element={<ItemListContainer/>} />
-                <Route path="/activo/:idActivo" element={<ItemDetailContainer/>} />
+                <Route path='/category/:idCategory' element={<ItemListContainer/>} />
+                <Route path="/item/:idItem" element={<ItemDetailContainer/>} />
             </Routes>
         </BrowserRouter>
     )

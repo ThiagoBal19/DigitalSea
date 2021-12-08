@@ -7,18 +7,16 @@ import Activos from './Activos';
 const ItemListContainer = () => {
 
     const [datos, setDatos] = useState([]);
-    const {nameCategory} = useParams();
-
-    console.log(nameCategory);
+    const {idCategory} = useParams();
 
     useEffect(() => {
         CustomFetch(2000, Activos.filter(item => {
-            if (nameCategory === undefined) return item;
-            return item.categoryName === parseInt(nameCategory)
+            if (idCategory === undefined) return item;
+            return item.categoryId === parseInt(idCategory)
         }))
             .then(result => setDatos(result))
             .catch(err => console.log(err))
-    }, [datos, nameCategory]);
+    }, [datos, idCategory]);
 
     return(
         <>
