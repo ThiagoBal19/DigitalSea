@@ -3,6 +3,25 @@
     padding: 0;
 }
 
+body {
+    background-color: rgba(32, 34, 37, 0.856);
+}
+
+.cart {
+    width: 2rem;
+}
+
+p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.loading {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+
 #encabezado {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
@@ -17,7 +36,7 @@
         background-color: #f6f6f6;
         padding: 0rem 1rem;
     }
-
+    
     .sub-encabezado2 {
         display: flex;
         flex-direction: row;
@@ -47,9 +66,6 @@
     }
 }
 
-.cart {
-    width: 2rem;
-}
 
 #gridActivos {
     display: grid;
@@ -61,6 +77,7 @@
         border: 0.1px gray solid;
         border-radius: 1rem;
         box-shadow: 0 0 5px black;
+        text-decoration: none;
 
         .imageDiv {
             text-align: center;
@@ -71,6 +88,7 @@
                 border-top-right-radius: 1rem;
                 border-top-left-radius: 1rem;
                 border-bottom: 1px gray dotted;
+                background-color: white;
             }
         }
 
@@ -81,12 +99,16 @@
             align-items: center;
             justify-content: space-between;
             padding: 0rem 1rem;
+            background-color: rgb(12, 15, 20);
 
             .description-title {
                 font-family: ui-monospace;
+                color: ghostwhite;
+                font-size: 1.2rem;
             }
             .description-cost {
                 font-family: monospace;
+                color: ghostwhite;
             }
         }
 
@@ -96,7 +118,7 @@
             flex-direction: row;
             justify-content: space-between;
             padding: 0.5rem 1rem;
-            background-color: rgba(211, 211, 211, 0.397);
+            background-color: rgb(12, 15, 20);
             border-bottom-right-radius: 1rem;
             border-bottom-left-radius: 1rem;
 
@@ -113,6 +135,89 @@
             .buttonComprar:hover {
                 background-color: black;
                 color: white;
+            }
+        }
+    }
+    #activos:hover {
+        transform: scale(1.01, 1.01);
+    }
+}
+
+#activo {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+
+    .imageDiv2 {
+
+
+        .image2 {
+            width: 35rem;
+            height: 35rem;
+            border-radius: 1rem;
+            background-color: white;
+        }
+    }
+    #descriptionDiv {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        margin-left: 1rem;
+        width: 40rem;
+
+        .description-title2 {
+            color: white;
+            margin: 1.87rem 0rem;
+            font-size: 2rem;
+            font-weight: 600;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .description-cost2 {
+            color: white;
+            border: 1px black solid;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            background-color: rgb(48, 51, 57);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            p {
+                margin-bottom: 1.87rem;
+                color: lightgrey;
+            }
+
+            #counter {
+                display: flex;
+                flex-direction: row;
+                background-color: rgb(32, 129, 226);
+                padding: 1rem 1.25rem;
+                border-radius: 0.5rem;
+                justify-content: center;
+
+                .botonSumar, .cantidadSeleccionada, .botonRestar {
+                    margin: 0rem 0.5rem
+                }
+                .botonSumar, .botonRestar {
+                    padding: 0rem 1rem;
+                    font-size: 1rem;
+                    border-radius: 0.5rem;
+                }
+                .botonSumar:hover, .botonRestar:hover {
+                    transform: scale(1.03, 1.03);
+                    background-color: lightgrey;
+                }
+
+                .botonAgregar {
+                    margin-left: 1rem;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    font-family: monospace;
+                    padding: 0.2rem 1rem;
+                }
+                .botonAgregar:hover {
+                    transform: scale(1.03, 1.03);
+                    background-color: lightgrey;
+                }
             }
         }
     }

@@ -3,6 +3,25 @@
   padding: 0;
 }
 
+body {
+  background-color: rgba(32, 34, 37, 0.856);
+}
+
+.cart {
+  width: 2rem;
+}
+
+p {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.loading {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
+
 #encabezado {
   display: -ms-grid;
   display: grid;
@@ -73,10 +92,6 @@
   color: black;
 }
 
-.cart {
-  width: 2rem;
-}
-
 #gridActivos {
   display: -ms-grid;
   display: grid;
@@ -91,6 +106,7 @@
   border-radius: 1rem;
   -webkit-box-shadow: 0 0 5px black;
           box-shadow: 0 0 5px black;
+  text-decoration: none;
 }
 
 #gridActivos #activos .imageDiv {
@@ -103,6 +119,7 @@
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
   border-bottom: 1px gray dotted;
+  background-color: white;
 }
 
 #gridActivos #activos #description {
@@ -121,14 +138,18 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0rem 1rem;
+  background-color: #0c0f14;
 }
 
 #gridActivos #activos #description .description-title {
   font-family: ui-monospace;
+  color: ghostwhite;
+  font-size: 1.2rem;
 }
 
 #gridActivos #activos #description .description-cost {
   font-family: monospace;
+  color: ghostwhite;
 }
 
 #gridActivos #activos .buttonDiv {
@@ -144,7 +165,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.5rem 1rem;
-  background-color: rgba(211, 211, 211, 0.397);
+  background-color: #0c0f14;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
@@ -162,5 +183,112 @@
 #gridActivos #activos .buttonDiv .buttonComprar:hover {
   background-color: black;
   color: white;
+}
+
+#gridActivos #activos:hover {
+  -webkit-transform: scale(1.01, 1.01);
+          transform: scale(1.01, 1.01);
+}
+
+#activo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1rem;
+}
+
+#activo .imageDiv2 .image2 {
+  width: 35rem;
+  height: 35rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+#activo #descriptionDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 1rem;
+  width: 40rem;
+}
+
+#activo #descriptionDiv .description-title2 {
+  color: white;
+  margin: 1.87rem 0rem;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#activo #descriptionDiv .description-cost2 {
+  color: white;
+  border: 1px black solid;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #303339;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#activo #descriptionDiv .description-cost2 p {
+  margin-bottom: 1.87rem;
+  color: lightgrey;
+}
+
+#activo #descriptionDiv .description-cost2 #counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #2081e2;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#activo #descriptionDiv .description-cost2 #counter .botonSumar, #activo #descriptionDiv .description-cost2 #counter .cantidadSeleccionada, #activo #descriptionDiv .description-cost2 #counter .botonRestar {
+  margin: 0rem 0.5rem;
+}
+
+#activo #descriptionDiv .description-cost2 #counter .botonSumar, #activo #descriptionDiv .description-cost2 #counter .botonRestar {
+  padding: 0rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+#activo #descriptionDiv .description-cost2 #counter .botonSumar:hover, #activo #descriptionDiv .description-cost2 #counter .botonRestar:hover {
+  -webkit-transform: scale(1.03, 1.03);
+          transform: scale(1.03, 1.03);
+  background-color: lightgrey;
+}
+
+#activo #descriptionDiv .description-cost2 #counter .botonAgregar {
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: monospace;
+  padding: 0.2rem 1rem;
+}
+
+#activo #descriptionDiv .description-cost2 #counter .botonAgregar:hover {
+  -webkit-transform: scale(1.03, 1.03);
+          transform: scale(1.03, 1.03);
+  background-color: lightgrey;
 }
 /*# sourceMappingURL=styles.css.map */

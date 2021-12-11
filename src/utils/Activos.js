@@ -25,17 +25,17 @@ import monsterWicked from '../components/assets/Art/monsterWicked.png';
 
 const Activos = [
     {
-        id: 1,
-        title: "Black Widow",
-        stock: 100,
-        cost: "$5.000",
-        image: [backWidow],
-        categoryId: 40,
-        category: {name: "nfts", id:40}
+        id: 16,
+        title: "Billionaire Meta #136",
+        stock: 15,
+        cost: "$31.000",
+        image: [billionaireMeta],
+        categoryId: 30,
+        category: {name: "Art", id: 30}
     },
     {
         id: 18,
-        title: "Meka Dark",
+        title: "Meka Dark #8150",
         stock: 16,
         cost: "$29.000",
         image: [mekaDark],
@@ -44,7 +44,7 @@ const Activos = [
     },
     {
         id: 2,
-        title: "Captain America",
+        title: "Captain America #7294",
         stock: 30,
         cost: "$16.000",
         image: [captainAmerica],
@@ -53,7 +53,7 @@ const Activos = [
     },
     {
         id: 3,
-        title: "Captain Marvel",
+        title: "Captain Marvel #2",
         stock: 50,
         cost: "$8.000",
         image: [captainMarvel],
@@ -62,7 +62,7 @@ const Activos = [
     },
     {
         id: 4,
-        title: "Deadpool",
+        title: "Deadpool #9201",
         stock: 45,
         cost: "$9.000",
         image: [deadpool],
@@ -71,7 +71,7 @@ const Activos = [
     },
     {
         id: 5,
-        title: "Doctor Strange",
+        title: "Doctor Strange #321",
         stock: 60,
         cost: "$6.500",
         image: [doctorStrange],
@@ -80,7 +80,7 @@ const Activos = [
     },
     {
         id: 21,
-        title: "Monster Bot",
+        title: "Monster Bot #17",
         stock: 12,
         cost: "$37.000",
         image: [monsterBot],
@@ -89,7 +89,7 @@ const Activos = [
     },
     {
         id: 22,
-        title: "Monster Demon",
+        title: "Monster Demon #69",
         stock: 5,
         cost: "$50.000",
         image: [monsterDemon],
@@ -98,7 +98,7 @@ const Activos = [
     },
     {
         id: 6,
-        title: "Hulk",
+        title: "Hulk #4",
         stock: 60,
         cost: "$6.500",
         image: [hulk],
@@ -107,7 +107,7 @@ const Activos = [
     },
     {
         id: 7,
-        title: "Iron Man",
+        title: "Iron Man #3",
         stock: 25,
         cost: "$18.000",
         image: [ironman],
@@ -116,7 +116,7 @@ const Activos = [
     },
     {
         id: 8,
-        title: "Loki",
+        title: "Loki #912",
         stock: 25,
         cost: "$18.500",
         image: [loki],
@@ -125,7 +125,7 @@ const Activos = [
     },
     {
         id: 9,
-        title: "Spider-Man",
+        title: "Spider-Man #723",
         stock: 20,
         cost: "$21.000",
         image: [spiderman],
@@ -134,7 +134,7 @@ const Activos = [
     },
     {
         id: 10,
-        title: "Thanos",
+        title: "Thanos #6535",
         stock: 45,
         cost: "$9.000",
         image: [thanos],
@@ -143,7 +143,7 @@ const Activos = [
     },
     {
         id: 15,
-        title: "Billionaire CEO",
+        title: "Billionaire CEO #634",
         stock: 15,
         cost: "$30.000",
         image: [billionaireCeo],
@@ -151,26 +151,29 @@ const Activos = [
         category: {name: "Art", id: 30}
     },
     {
-        id: 16,
-        title: "Billionaire Meta",
-        stock: 15,
-        cost: "$31.000",
-        image: [billionaireMeta],
-        categoryId: 30,
-        category: {name: "Art", id: 30}
-    },
-    {
-        id: 11,
-        title: "Thor",
-        stock: 15,
-        cost: "$24.000",
-        image: [thor],
+        id: 1,
+        title: "Black Widow #34",
+        stock: 100,
+        cost: "$5.000",
+        image: [backWidow],
         categoryId: 40,
         category: {name: "nfts", id:40}
     },
     {
+        id: 11,
+        title: "Thor #85",
+        stock: 15,
+        cost: "$24.000",
+        image: [thor],
+        categoryId: 40,
+        category: {
+            name: "nfts",
+            id: 40
+        }
+    },
+    {
         id: 12,
-        title: "Vision",
+        title: "Vision #4142",
         stock: 70,
         cost: "$4.300",
         image: [vision],
@@ -179,7 +182,7 @@ const Activos = [
     },
     {
         id: 13,
-        title: "War Machine",
+        title: "War Machine #1421",
         stock: 75,
         cost: "$3.700",
         image: [warMachine],
@@ -188,7 +191,7 @@ const Activos = [
     },
     {
         id: 14,
-        title: "Winter Soldier",
+        title: "Winter Soldier #421",
         stock: 65,
         cost: "$5.500",
         image: [winterSoldier],
@@ -197,7 +200,7 @@ const Activos = [
     },
     {
         id: 17,
-        title: "Billionarie NBA",
+        title: "Billionarie NBA #342",
         stock: 15,
         cost: "$31.500",
         image: [billionaireNba],
@@ -206,7 +209,7 @@ const Activos = [
     },
     {
         id: 19,
-        title: "Meka Japan",
+        title: "Meka Japan #140",
         stock: 13,
         cost: "$34.000",
         image: [mekaJapan],
@@ -215,7 +218,7 @@ const Activos = [
     },
     {
         id: 20,
-        title: "Meka Zeus",
+        title: "Meka Zeus #27",
         stock: 10,
         cost: "$40.000",
         image: [mekaZeus],
@@ -224,7 +227,7 @@ const Activos = [
     },
     {
         id: 23,
-        title: "Monster Wicked",
+        title: "Monster Wicked #413",
         stock: 6,
         cost: "$45.000",
         image: [monsterWicked],

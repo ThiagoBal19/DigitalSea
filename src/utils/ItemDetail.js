@@ -21,16 +21,14 @@ const ItemDetail = ({item}) => {
                 </div>
                 <div id="descriptionDiv">
                     <h1 className="description-title2">{item.title}</h1>
-                    <h2 className="description-cost2">{item.cost}</h2>
-                </div>
-                <div className="buttonDiv2">
-                    <p className="description-stock2">mint: {item.stock}</p>
-                </div>
-                <div>
-                    <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} />
+                    <div className="description-cost2">
+                        <h2>{item.cost}</h2>
+                        <p>mint: {item.stock}</p>
+                        <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} />
+                    </div>
                 </div>
             </section>
-            : <p>Cargando...</p>
+            : <p className='loading'>Cargando...</p>
         }
         </>
     )

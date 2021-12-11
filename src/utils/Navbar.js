@@ -7,13 +7,13 @@ const Navbar = () => {
         <>
             <section id="encabezado">
                 <div className="sub-encabezado">
-                    <Link to={`/`}><img src={brandWallpaper} alt="ilustración"/></Link>
+                    <Link to='/'><img src={brandWallpaper} alt="ilustración"/></Link>
                     <ul className="listas">
                         <li>
-                            <Link to={`/`}>HOME</Link>
+                            <Link to='/'>HOME</Link>
                         </li>
                         <li>
-                            <Link to={`/`}>CARRITO</Link>
+                            <Link to='/'>CARRITO</Link>
                         </li>
                         <li>
                             <CartWidget/>
@@ -24,19 +24,19 @@ const Navbar = () => {
                 <div className="sub-encabezado2">
                     <ul className="listas">
                         <li>
-                            <Link to={`/`}>EXPLORAR</Link>
+                            <Link to='/'>EXPLORAR</Link>
                         </li>
                         <li>
-                            <Link to={`/category/40`}>NFT's</Link>
+                            <Link to='/category/40'>NFT's</Link>
                         </li>
                         <li>
-                            <Link to={`/category/30`}>ARTE</Link>
+                            <Link to='/category/30'>ARTE</Link>
                         </li>
                     </ul>
                 </div>
             </section>
         </>
-    )
+    );
 }
 
 export default Navbar;

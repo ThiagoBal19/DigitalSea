@@ -1,16 +1,15 @@
-import Activos from './Activos';
 import Item from './Item';
 
-const ItemList = () => {
+const ItemList = (props) => {
     return (
         <div id="gridActivos">
             {
-                Activos.length > 0
+                props.items.length > 0
                 ?
-
-                Activos.map(item => <Item key={item.id} id={item.id} title={item.title} cost={item.cost} stock={item.stock} picture={item.image} />)
-
-                : <p>Cargando...</p>
+                
+                props.items.map(item => <Item key={item.id} id={item.id} title={item.title} cost={item.cost} stock={item.stock} picture={item.image} />)
+                
+                : <p className='loading'>Cargando...</p>
             }
         </div>
     );

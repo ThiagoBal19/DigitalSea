@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Item = ({id, title, stock, cost, picture}) => {
     return(
         <>
-            <section id="activos">
+            <Link id="activos" to={`/item/${id}`}>
                 <div className="imageDiv">
                     <img className="image" src={picture} alt={title}/>
                 </div>
@@ -15,7 +15,7 @@ const Item = ({id, title, stock, cost, picture}) => {
                     <Link className="buttonComprar" to={`/item/${id}`}>Invertir</Link>
                     <p className="description-stock">mint: {stock}</p>
                 </div>
-            </section>
+            </Link>
         </>
     )
 }

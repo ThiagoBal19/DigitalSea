@@ -9,7 +9,7 @@ const ItemCount = ({stock=0, initial=1}) => {
     }, [initial])
 
     const Increment = () => {
-        if (cantidad > stock) {
+        if (cantidad < stock) {
             setCantidad(cantidad + 1);
             console.log("SUMAR")
         }
@@ -22,6 +22,7 @@ const ItemCount = ({stock=0, initial=1}) => {
     }
     const Agregar = () => {
         if (cantidad === 0) {
+            alert("No hay activos por agregar");
             console.log("No hay activos por agregar");
         } else {
             alert(`Se agregó ${cantidad} al carrito`);
@@ -31,13 +32,13 @@ const ItemCount = ({stock=0, initial=1}) => {
 
     return(
         <>
-            <div>
+            <div id="counter">
                 <button className="botonRestar" onClick={Decrement}>-</button>
-                {cantidad}
+                <p className="cantidadSeleccionada">{cantidad}</p>
                 <button className="botonSumar" onClick={Increment}>+</button>
-            </div>
-            <div>
-                <button className="botonAgregar" onClick={Agregar}>Agregar</button>
+                <div>
+                    <button className="botonAgregar" onClick={Agregar}>Agregar</button>
+                </div>
             </div>
         </>
     )
