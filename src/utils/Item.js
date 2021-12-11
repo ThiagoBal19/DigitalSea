@@ -17,7 +17,7 @@ const Item = ({id, title, stock, cost, picture}) => {
                 </div>
             </Link>
         </>
-    )
+    );
 }
 
 export default Item;

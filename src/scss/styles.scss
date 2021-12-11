@@ -20,6 +20,7 @@ p {
     font-size: 2rem;
     margin-top: 2rem;
     margin-left: 5rem;
+    margin-bottom: 95%;
 }
 
 #encabezado {
@@ -218,6 +219,32 @@ p {
                     transform: scale(1.03, 1.03);
                     background-color: lightgrey;
                 }
+            }
+        }
+    }
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #f6f6f6;
+    padding: 1.5rem 0rem;
+
+    .copyright {
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    #footerExtras {
+        li {
+            list-style: none;
+            
+            a {
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.5);
+            }
+            a:hover {
+                color: black;
             }
         }
     }

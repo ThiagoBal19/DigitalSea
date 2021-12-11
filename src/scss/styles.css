@@ -20,6 +20,7 @@ p {
   font-size: 2rem;
   margin-top: 2rem;
   margin-left: 5rem;
+  margin-bottom: 95%;
 }
 
 #encabezado {
@@ -290,5 +291,36 @@ p {
   -webkit-transform: scale(1.03, 1.03);
           transform: scale(1.03, 1.03);
   background-color: lightgrey;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #f6f6f6;
+  padding: 1.5rem 0rem;
+}
+
+#footer .copyright {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#footer #footerExtras li {
+  list-style: none;
+}
+
+#footer #footerExtras li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#footer #footerExtras li a:hover {
+  color: black;
 }
 /*# sourceMappingURL=styles.css.map */
