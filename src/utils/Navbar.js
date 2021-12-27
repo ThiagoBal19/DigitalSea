@@ -13,10 +13,7 @@ const Navbar = () => {
                             <Link to='/'>HOME</Link>
                         </li>
                         <li>
-                            <Link to='/'>CARRITO</Link>
-                        </li>
-                        <li>
-                            <CartWidget/>
+                            <Link to='/cart'><CartWidget/></Link>
                         </li>
                     </ul>
                 </div>

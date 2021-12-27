@@ -9,10 +9,10 @@ const Item = ({id, title, stock, cost, picture}) => {
                 </div>
                 <div id="description">
                     <h1 className="description-title">{title}</h1>
-                    <h2 className="description-cost">{cost}</h2>
+                    <h2 className="description-cost">${cost}</h2>
                 </div>
                 <div className="buttonDiv">
-                    <Link className="buttonComprar" to={`/item/${id}`}>Invertir</Link>
+                    <p className="buttonComprar" type="button">Invertir</p>
                     <p className="description-stock">mint: {stock}</p>
                 </div>
             </Link>

@@ -1,8 +1,12 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { CartContext } from "./CartContext";
 
-const ItemCount = ({stock=0, initial=1}) => {
+const ItemCount = ({stock=0, initial=1, onAddCount}) => {
 
     const [cantidad, setCantidad] = useState(0);
+
+    const test = useContext(CartContext);
+    console.log("ItemCount: ", test);
 
     useEffect(() => {
         setCantidad(initial);
@@ -11,22 +15,11 @@ const ItemCount = ({stock=0, initial=1}) => {
     const Increment = () => {
         if (cantidad < stock) {
             setCantidad(cantidad + 1);
-            console.log("SUMAR")
         }
     }
     const Decrement = () => {
         if (cantidad > 1) {
             setCantidad(cantidad - 1);
-            console.log("RESTAR")
-        }
-    }
-    const Agregar = () => {
-        if (cantidad === 0) {
-            alert("No hay activos por agregar");
-            console.log("No hay activos por agregar");
-        } else {
-            alert(`Se agregó ${cantidad} al carrito`);
-            console.log(`Se agregó ${cantidad} al carrito`);
         }
     }
 
@@ -37,7 +30,7 @@ const ItemCount = ({stock=0, initial=1}) => {
                 <p className="cantidadSeleccionada">{cantidad}</p>
                 <button className="botonSumar" onClick={Increment}>+</button>
                 <div>
-                    <button className="botonAgregar" onClick={Agregar}>Agregar</button>
+                    <button className="botonAgregar" onClick={() => onAddCount(cantidad)}>Agregar</button>
                 </div>
             </div>
         </>

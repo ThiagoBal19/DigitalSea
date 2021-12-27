@@ -27,7 +27,6 @@ p {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     align-items: center;
-    overflow: hidden;
     
     .sub-encabezado {
         display: flex;
@@ -36,6 +35,11 @@ p {
         overflow: hidden;        
         background-color: #f6f6f6;
         padding: 0rem 1rem;
+
+        #carrito {
+            display: flex;
+            flex-direction: row;
+        }
     }
     
     .sub-encabezado2 {
@@ -150,8 +154,6 @@ p {
     margin: 1rem;
 
     .imageDiv2 {
-
-
         .image2 {
             width: 35rem;
             height: 35rem;
@@ -220,6 +222,68 @@ p {
                     background-color: lightgrey;
                 }
             }
+        }
+    }
+}
+
+#cartStatus {
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 11rem;
+
+    h1, h2 {
+        color: white;
+    }
+}
+
+#carritoEncabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .button3 {
+        margin: 0.5rem;
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: monospace;
+        color: black;
+        background-color: #f6f6f6;
+    }
+}
+
+#activo3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3rem 1.5rem;
+    padding: 0.5rem;
+    border: 1px solid white;
+
+    .imageDiv3 {
+        .image3 {
+            width: 15rem;
+            height: 15rem;
+            border-radius: 1rem;
+            background-color: white;
+        }
+    }
+
+    #descriptionDiv2 {
+        .description-title3 {
+            margin: 0.5rem;
+        }
+        .button4 {
+            margin: 0.5rem;
+            padding: 0.2rem 1.5rem;
+            font-weight: 600;
+            font-family: monospace;
+            color: black;
+            background-color: #f6f6f6;
+        }
+        .button4:hover {
+            transform: scale(1.03, 1.03);
         }
     }
 }

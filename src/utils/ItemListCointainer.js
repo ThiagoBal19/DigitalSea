@@ -9,7 +9,6 @@ const ItemListContainer = () => {
     const [datos, setDatos] = useState([]);
     const {idCategory} = useParams();
 
-
     useEffect(() => {
         CustomFetch(1000, Activos.filter(item => {
             if (idCategory === undefined) return item;

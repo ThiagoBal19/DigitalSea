@@ -28,7 +28,7 @@ const Activos = [
         id: 16,
         title: "Billionaire Meta #136",
         stock: 15,
-        cost: "$31.000",
+        cost: 31000,
         image: [billionaireMeta],
         categoryId: 30,
         category: {name: "Art", id: 30}
@@ -37,7 +37,7 @@ const Activos = [
         id: 18,
         title: "Meka Dark #8150",
         stock: 16,
-        cost: "$29.000",
+        cost: 29000,
         image: [mekaDark],
         categoryId: 30,
         category: {name: "Art", id: 30}
@@ -46,7 +46,7 @@ const Activos = [
         id: 2,
         title: "Captain America #7294",
         stock: 30,
-        cost: "$16.000",
+        cost: 16000,
         image: [captainAmerica],
         categoryId: 40,
         category: {name: "nfts", id:40}
@@ -55,7 +55,7 @@ const Activos = [
         id: 3,
         title: "Captain Marvel #2",
         stock: 50,
-        cost: "$8.000",
+        cost: 8000,
         image: [captainMarvel],
         categoryId: 40,
         category: {name: "nfts", id:40}
@@ -64,7 +64,7 @@ const Activos = [
         id: 4,
         title: "Deadpool #9201",
         stock: 45,
-        cost: "$9.000",
+        cost: 9000,
         image: [deadpool],
         categoryId: 40,
         category: {name: "nfts", id:40}
@@ -73,7 +73,7 @@ const Activos = [
         id: 5,
         title: "Doctor Strange #321",
         stock: 60,
-        cost: "$6.500",
+        cost: 6500,
         image: [doctorStrange],
         categoryId: 40,
         category: {name: "nfts", id:40}
@@ -82,7 +82,7 @@ const Activos = [
         id: 21,
         title: "Monster Bot #17",
         stock: 12,
-        cost: "$37.000",
+        cost: 37000,
         image: [monsterBot],
         categoryId: 30,
         category: {name: "Art", id: 30}
@@ -91,7 +91,7 @@ const Activos = [
         id: 22,
         title: "Monster Demon #69",
         stock: 5,
-        cost: "$50.000",
+        cost: 50000,
         image: [monsterDemon],
         categoryId: 30,
         category: {name: "Art", id: 30}
@@ -100,7 +100,7 @@ const Activos = [
         id: 6,
         title: "Hulk #4",
         stock: 60,
-        cost: "$6.500",
+        cost: 6500,
         image: [hulk],
         categoryId: 40,
         category: {name: "nfts", id:40}
@@ -109,7 +109,7 @@ const Activos = [
         id: 7,
         title: "Iron Man #3",
         stock: 25,
-        cost: "$18.000",
+        cost: 18000,
         image: [ironman],
         categoryId: 40,
         category: {name: "nfts", id:40}
@@ -118,7 +118,7 @@ const Activos = [
         id: 8,
         title: "Loki #912",
         stock: 25,
-        cost: "$18.500",
+        cost: 18500,
         image: [loki],
         categoryId: 40,
         category: {name: "nfts", id:40}
@@ -127,7 +127,7 @@ const Activos = [
         id: 9,
         title: "Spider-Man #723",
         stock: 20,
-        cost: "$21.000",
+        cost: 21000,
         image: [spiderman],
         categoryId: 40,
         category: {name: "nfts", id:40}
@@ -136,7 +136,7 @@ const Activos = [
         id: 10,
         title: "Thanos #6535",
         stock: 45,
-        cost: "$9.000",
+        cost: 9000,
         image: [thanos],
         categoryId: 40,
         category: {name: "nfts", id:40}
@@ -145,7 +145,7 @@ const Activos = [
         id: 15,
         title: "Billionaire CEO #634",
         stock: 15,
-        cost: "$30.000",
+        cost: 30000,
         image: [billionaireCeo],
         categoryId: 30,
         category: {name: "Art", id: 30}
@@ -154,7 +154,7 @@ const Activos = [
         id: 1,
         title: "Black Widow #34",
         stock: 100,
-        cost: "$5.000",
+        cost: 5000,
         image: [backWidow],
         categoryId: 40,
         category: {name: "nfts", id:40}
@@ -163,7 +163,7 @@ const Activos = [
         id: 11,
         title: "Thor #85",
         stock: 15,
-        cost: "$24.000",
+        cost: 24000,
         image: [thor],
         categoryId: 40,
         category: {
@@ -175,7 +175,7 @@ const Activos = [
         id: 12,
         title: "Vision #4142",
         stock: 70,
-        cost: "$4.300",
+        cost: 4300,
         image: [vision],
         categoryId: 40,
         category: {name: "nfts", id:40}
@@ -184,7 +184,7 @@ const Activos = [
         id: 13,
         title: "War Machine #1421",
         stock: 75,
-        cost: "$3.700",
+        cost: 3700,
         image: [warMachine],
         categoryId: 40,
         category: {name: "nfts", id:40}
@@ -193,7 +193,7 @@ const Activos = [
         id: 14,
         title: "Winter Soldier #421",
         stock: 65,
-        cost: "$5.500",
+        cost: 5500,
         image: [winterSoldier],
         categoryId: 40,
         category: {name: "nfts", id:40}
@@ -202,7 +202,7 @@ const Activos = [
         id: 17,
         title: "Billionarie NBA #342",
         stock: 15,
-        cost: "$31.500",
+        cost: 31500,
         image: [billionaireNba],
         categoryId: 30,
         category: {name: "Art", id: 30}
@@ -211,7 +211,7 @@ const Activos = [
         id: 19,
         title: "Meka Japan #140",
         stock: 13,
-        cost: "$34.000",
+        cost: 34000,
         image: [mekaJapan],
         categoryId: 30,
         category: {name: "Art", id: 30}
@@ -220,7 +220,7 @@ const Activos = [
         id: 20,
         title: "Meka Zeus #27",
         stock: 10,
-        cost: "$40.000",
+        cost: 40000,
         image: [mekaZeus],
         categoryId: 30,
         category: {name: "Art", id: 30}
@@ -229,7 +229,7 @@ const Activos = [
         id: 23,
         title: "Monster Wicked #413",
         stock: 6,
-        cost: "$45.000",
+        cost: 45000,
         image: [monsterWicked],
         categoryId: 30,
         category: {name: "Art", id: 30}

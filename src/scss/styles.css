@@ -31,7 +31,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
 }
 
 #encabezado .sub-encabezado {
@@ -48,6 +47,16 @@ p {
   overflow: hidden;
   background-color: #f6f6f6;
   padding: 0rem 1rem;
+}
+
+#encabezado .sub-encabezado #carrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #encabezado .sub-encabezado2 {
@@ -291,6 +300,81 @@ p {
   -webkit-transform: scale(1.03, 1.03);
           transform: scale(1.03, 1.03);
   background-color: lightgrey;
+}
+
+#cartStatus {
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 11rem;
+}
+
+#cartStatus h1, #cartStatus h2 {
+  color: white;
+}
+
+#carritoEncabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#carritoEncabezado .button3 {
+  margin: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: monospace;
+  color: black;
+  background-color: #f6f6f6;
+}
+
+#activo3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 3rem 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid white;
+}
+
+#activo3 .imageDiv3 .image3 {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+#activo3 #descriptionDiv2 .description-title3 {
+  margin: 0.5rem;
+}
+
+#activo3 #descriptionDiv2 .button4 {
+  margin: 0.5rem;
+  padding: 0.2rem 1.5rem;
+  font-weight: 600;
+  font-family: monospace;
+  color: black;
+  background-color: #f6f6f6;
+}
+
+#activo3 #descriptionDiv2 .button4:hover {
+  -webkit-transform: scale(1.03, 1.03);
+          transform: scale(1.03, 1.03);
 }
 
 #footer {
