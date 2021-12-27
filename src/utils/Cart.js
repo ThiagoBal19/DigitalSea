@@ -4,7 +4,14 @@ import { CartContext } from "./CartContext";
 const Cart = () => {
 
     const test = useContext(CartContext);
-    console.log("Cart: ", test);
+
+    let comprar = () => {
+        if (comprar !== true) {
+            alert("Su compra ha finalizado, gracias por elegirnos");
+        } else if (comprar === false) {
+            comprar = 0;
+        }
+    }
 
     return (
         <div id="cartStatus">
@@ -40,6 +47,7 @@ const Cart = () => {
                         test.cartList.length > 0 &&
                         <h1>Total: ${test.compraTotal()}</h1>
                     }
+                    <button className="button5" type="button" onClick={comprar}>COMPRAR</button>
                 </div>
             </div>
         </div>

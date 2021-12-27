@@ -24,10 +24,10 @@ const Navbar = () => {
                             <Link to='/'>EXPLORAR</Link>
                         </li>
                         <li>
-                            <Link to='/category/40'>NFT's</Link>
+                            <Link to='/category/7d51SaROKjQMKG27YEY5'>NFT's</Link>
                         </li>
                         <li>
-                            <Link to='/category/30'>ARTE</Link>
+                            <Link to='/category/JBo0yFa6ivnZcqBWsQKE'>ARTE</Link>
                         </li>
                     </ul>
                 </div>

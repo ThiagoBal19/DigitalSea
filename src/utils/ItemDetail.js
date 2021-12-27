@@ -15,7 +15,6 @@ const ItemDetail = ({ item }) => {
             alert("No hay activos por agregar");
         } else {
             alert(`Se agregó ${cantidad} al carrito`);
-            console.log(`Se agregó ${cantidad} al carrito`);
         }
     }
 

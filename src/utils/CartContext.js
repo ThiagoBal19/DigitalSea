@@ -21,6 +21,7 @@ const CartContextProvider = ({children}) => {
                 ]);
             } else {
                 found.stockItem += cantidad;
+                setCartList([...cartList]);
             }
         }
 
