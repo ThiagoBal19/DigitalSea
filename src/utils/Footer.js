@@ -13,8 +13,8 @@ const Footer = () => {
                     <h1>Marketplace</h1>
                     <ul id='footerExtras'>
                         <li><Link to='/'>Explorar</Link></li>
-                        <li><Link to='/category/40'>NFT's</Link></li>
-                        <li><Link to='/category/30'>Arte</Link></li>
+                        <li><Link to='/category/7d51SaROKjQMKG27YEY5'>NFT's</Link></li>
+                        <li><Link to='/category/JBo0yFa6ivnZcqBWsQKE'>Arte</Link></li>
                     </ul>
                 </div>
             </div>

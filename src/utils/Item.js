@@ -9,7 +9,7 @@ const Item = ({id, title, stock, cost, picture}) => {
                 </div>
                 <div id="description">
                     <h1 className="description-title">{title}</h1>
-                    <h2 className="description-cost">${cost}</h2>
+                    <h2 className="description-cost">US${cost}</h2>
                 </div>
                 <div className="buttonDiv">
                     <p className="buttonComprar" type="button">Invertir</p>

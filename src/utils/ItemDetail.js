@@ -30,7 +30,7 @@ const ItemDetail = ({ item }) => {
                     <div id="descriptionDiv">
                         <h1 className="description-title2">{item.title}</h1>
                         <div className="description-cost2">
-                            <h2>${item.cost}</h2>
+                            <h2>US${item.cost}</h2>
                             <p>mint: {item.stock}</p>
                             <ItemCount stock={item.stock} initial={itemCount} onAddCount={onAddCount} />
                         </div>

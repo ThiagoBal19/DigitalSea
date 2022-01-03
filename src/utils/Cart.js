@@ -33,7 +33,7 @@ const Cart = () => {
                                     <div className="description-cost3">
                                         <p>{item.stockItem} item(s)</p>
                                         <h2>{item.costItem} c/u</h2>
-                                        <h2>Total: ${test.totalCompraItem(item.idItem)}</h2>
+                                        <h2>Total: US${test.totalCompraItem(item.idItem)}</h2>
                                     </div>
                                     <button className="button4" type="button" onClick={() => test.deleteCartList(item.idItem)}>Borrar Item</button>
                                 </div>
@@ -45,7 +45,7 @@ const Cart = () => {
                 <div>
                     {
                         test.cartList.length > 0 &&
-                        <h1>Total: ${test.compraTotal()}</h1>
+                        <h1>Total: US${test.compraTotal()}</h1>
                     }
                     <button className="button5" type="button" onClick={comprar}>COMPRAR</button>
                 </div>
