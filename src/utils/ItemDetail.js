@@ -1,4 +1,5 @@
 import { useContext, useState } from 'react';
+import swal from 'sweetalert';
 import { CartContext } from './CartContext';
 import ItemCount from './ItemCount';
 
@@ -12,9 +13,19 @@ const ItemDetail = ({ item }) => {
         setItemCount(cantidad);
         test.addToCart(item, cantidad);
         if (cantidad === 0) {
-            alert("No hay activos por agregar");
+            swal({
+                title: "No hay nada para agregar",
+                text: "Selecciona la cantidad que quieres comprar",
+                icon: "warning",
+                button: "Aceptar",
+            });
         } else {
-            alert(`Se agregó ${cantidad} al carrito`);
+            swal({
+                title: `Acabas de agregar ${cantidad} al carrito`,
+                text: "Para ver tu compra selecciona el icono del carrito",
+                icon: "success",
+                button: "Aceptar",
+            });
         }
     }
 
@@ -36,7 +47,9 @@ const ItemDetail = ({ item }) => {
                         </div>
                     </div>
                 </section>
-                : <p className='loading'>Cargando...</p>
+                : <div class="loading spinner-border text-light" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
             }
         </>
     );

@@ -57,13 +57,29 @@
     text-align: center;
   }
   #activo .imageDiv2 .image2 {
-    width: 23rem;
-    height: 24rem;
+    width: 15rem;
+    height: 18rem;
   }
   #activo #descriptionDiv {
     margin-left: unset;
     width: unset;
     text-align: center;
+  }
+  #activo #descriptionDiv .description-cost2 #counter .botonRestar {
+    padding: 0rem 0.4rem;
+  }
+  #activo #descriptionDiv .description-cost2 #counter .botonSumar {
+    padding: 0rem 0.4rem;
+  }
+  #activo3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #activo3 .imageDiv3 .image3 {
+    width: 12rem;
+    height: 14rem;
   }
   #footer {
     -webkit-box-orient: vertical;

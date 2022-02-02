@@ -1,18 +1,20 @@
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
+import swal from "sweetalert";
 
 const Cart = () => {
 
     const test = useContext(CartContext);
 
-    let comprar = () => {
-        if (comprar !== true) {
-            alert("Su compra ha finalizado, gracias por elegirnos");
-        } else if (comprar === false) {
-            comprar = 0;
-        }
+    let comprar = () =>{
+        swal({
+            title: "Compra Finalizada",
+            text: "Su compra ha sido procesada y verificada",
+            icon: "success",
+            button: "Aceptar",
+        });
     }
-
+    
     return (
         <div id="cartStatus">
             <div id="carritoEncabezado">

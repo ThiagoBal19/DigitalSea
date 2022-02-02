@@ -3,12 +3,12 @@
   padding: 0;
 }
 
-body {
+#root {
   background-color: rgba(32, 34, 37, 0.856);
 }
 
 .cart {
-  width: 2rem;
+  width: 2.5rem;
 }
 
 p {
@@ -17,7 +17,7 @@ p {
 }
 
 .loading {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 2rem;
   margin-left: 5rem;
   margin-bottom: 95%;
@@ -44,6 +44,9 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
   background-color: #f6f6f6;
   padding: 0rem 1rem;
@@ -57,6 +60,10 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+#encabezado .sub-encabezado #carrito .cartQuantity {
+  font-size: x-large;
 }
 
 #encabezado .sub-encabezado2 {
@@ -85,6 +92,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: unset;
+  padding-left: unset;
 }
 
 .listas li {
@@ -111,7 +120,7 @@ p {
 }
 
 #gridActivos #activos {
-  margin: 2rem;
+  margin: 1rem;
   border: 0.1px gray solid;
   border-radius: 1rem;
   -webkit-box-shadow: 0 0 5px black;
@@ -154,12 +163,14 @@ p {
 #gridActivos #activos #description .description-title {
   font-family: ui-monospace;
   color: ghostwhite;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  margin: 5px;
 }
 
 #gridActivos #activos #description .description-cost {
   font-family: monospace;
   color: ghostwhite;
+  font-weight: 700;
 }
 
 #gridActivos #activos .buttonDiv {
@@ -209,6 +220,9 @@ p {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #activo .imageDiv2 .image2 {
@@ -251,6 +265,10 @@ p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#activo #descriptionDiv .description-cost2 h2 {
+  font-family: monospace;
+}
+
 #activo #descriptionDiv .description-cost2 p {
   margin-bottom: 1.87rem;
   color: lightgrey;
@@ -270,6 +288,9 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #activo #descriptionDiv .description-cost2 #counter .botonSumar, #activo #descriptionDiv .description-cost2 #counter .cantidadSeleccionada, #activo #descriptionDiv .description-cost2 #counter .botonRestar {
@@ -418,6 +439,22 @@ p {
   color: black;
 }
 
+.swal-overlay--show-modal {
+  background: #000000b0;
+}
+
+.swal-overlay--show-modal .swal-modal .swal-title {
+  font-weight: 900;
+}
+
+.swal-overlay--show-modal .swal-modal .swal-text {
+  font-weight: 500;
+}
+
+.swal-overlay--show-modal .swal-modal .swal-button {
+  background-color: #0066ff;
+}
+
 @media only screen and (min-width: 150px) and (max-width: 560px) {
   #encabezado {
     display: -webkit-box;
@@ -477,13 +514,29 @@ p {
     text-align: center;
   }
   #activo .imageDiv2 .image2 {
-    width: 23rem;
-    height: 24rem;
+    width: 15rem;
+    height: 18rem;
   }
   #activo #descriptionDiv {
     margin-left: unset;
     width: unset;
     text-align: center;
+  }
+  #activo #descriptionDiv .description-cost2 #counter .botonRestar {
+    padding: 0rem 0.4rem;
+  }
+  #activo #descriptionDiv .description-cost2 #counter .botonSumar {
+    padding: 0rem 0.4rem;
+  }
+  #activo3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #activo3 .imageDiv3 .image3 {
+    width: 12rem;
+    height: 14rem;
   }
   #footer {
     -webkit-box-orient: vertical;

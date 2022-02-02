@@ -10,7 +10,7 @@ const CartWidget = () => {
         <>
         <div id='carrito'>
             <img className="cart" src={cart} alt="carrito" />
-            <h1>{test.calcularCantidadItems()}</h1>
+            <h1 className='cartQuantity'>{test.calcularCantidadItems()}</h1>
         </div>
         </>
     )

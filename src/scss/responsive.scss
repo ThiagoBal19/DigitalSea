@@ -42,8 +42,8 @@
             text-align: center;
 
             .image2 {
-                width: 23rem;
-                height: 24rem;
+                width: 15rem;
+                height: 18rem;
             }
         }
         
@@ -51,6 +51,28 @@
             margin-left: unset;
             width: unset;
             text-align: center;
+
+            .description-cost2 {
+                #counter {
+                    .botonRestar {
+                        padding: 0rem 0.4rem;
+                    }
+                    .botonSumar {
+                        padding: 0rem 0.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    #activo3 {
+        flex-direction: column;
+        
+        .imageDiv3 {
+            .image3 {
+                width: 12rem;
+                height: 14rem;
+            }
         }
     }
 

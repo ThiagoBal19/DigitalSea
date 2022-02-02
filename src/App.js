@@ -7,10 +7,18 @@ import ItemDetailContainer from './utils/ItemDetailContainer';
 import Footer from './utils/Footer';
 import Cart from './utils/Cart';
 import CartContextProvider from './utils/CartContext';
+import {Helmet} from "react-helmet";
+
 
 const App = () => {
     return (
         <CartContextProvider>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Digital Sea</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+                <meta name="description" content="Buy NFT's and make profit with it" />
+            </Helmet>
             <BrowserRouter>
                 <Navbar/>
                 <Routes>
