@@ -319,6 +319,7 @@ p {
     justify-content: space-around;
     background-color: #f6f6f6;
     padding: 1.5rem 0rem;
+    align-items: center;
 
     .copyright {
         color: rgba(0, 0, 0, 0.5);
@@ -337,6 +338,41 @@ p {
             }
         }
     }
+}
+
+.scrollTop {
+    position: fixed; 
+    width: 3%;
+    left: 93%;
+    bottom: 20px;
+    height: 40px;
+    z-index: 1;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 0.7;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #404245;
+    padding: 1.3rem;
+
+    .imgTop {
+        width: 2rem;
+    }
+}
+  
+.scrollTop:hover{
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 0.7;
+}
 }
 
 // Modal

@@ -9,8 +9,8 @@ const ItemList = (props) => {
                 
                 props.items.map(item => <Item key={item.id} id={item.id} title={item.title} cost={item.cost} stock={item.stock} picture={item.image} />)
                 
-                : <div class="loading spinner-border text-light" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                : <div className="loading spinner-border text-light" role="status">
+                    <span className="visually-hidden">Loading...</span>
                   </div>
             }
         </div>

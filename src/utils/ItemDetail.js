@@ -47,8 +47,8 @@ const ItemDetail = ({ item }) => {
                         </div>
                     </div>
                 </section>
-                : <div class="loading spinner-border text-light" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                : <div className="loading spinner-border text-light" role="status">
+                    <span className="visually-hidden">Loading...</span>
                   </div>
             }
         </>

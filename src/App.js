@@ -7,6 +7,7 @@ import ItemDetailContainer from './utils/ItemDetailContainer';
 import Footer from './utils/Footer';
 import Cart from './utils/Cart';
 import CartContextProvider from './utils/CartContext';
+import ScrollArrow from './utils/ScrollUp';
 import {Helmet} from "react-helmet";
 
 
@@ -28,6 +29,7 @@ const App = () => {
                     <Route path='/cart' element={<Cart/>} />
                 </Routes>
                 <Footer/>
+                <ScrollArrow/>
             </BrowserRouter>
         </CartContextProvider>
     );

@@ -2,6 +2,7 @@ import brandWallpaper from '../components/assets/brandWallpaper.png';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+
     return (
         <>
             <div id='footer'>

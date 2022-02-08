@@ -83,7 +83,12 @@
 
         #footerExtras {
             text-align: center;
+            padding-left: unset;
         }
+    }
+
+    .scrollTop {
+        left: 85%;
     }
 }
 
